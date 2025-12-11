@@ -50,20 +50,7 @@ export default function MusicPlayer({ shouldPlay = false }: MusicPlayerProps) {
           className="fixed bottom-5 right-5 z-50"
         >
           <div className="relative">
-            <motion.button
-              onClick={togglePlay}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              animate={isPlaying ? { rotate: 360 } : { rotate: 0 }}
-              transition={isPlaying ? { duration: 3, repeat: Infinity, ease: "linear" } : {}}
-              className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-full shadow-2xl flex items-center justify-center text-white hover:shadow-rose-300 transition-all"
-            >
-              {isPlaying ? (
-                <FaMusic className="text-md" />
-              ) : (
-                <FaPlay className="text-sm ml-1" />
-              )}
-            </motion.button>
+            
             
             {/* Ripple effect when playing */}
             {isPlaying && (
@@ -82,6 +69,21 @@ export default function MusicPlayer({ shouldPlay = false }: MusicPlayerProps) {
                 />
               </>
             )}
+
+            <motion.button
+              onClick={togglePlay}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              animate={isPlaying ? { rotate: 360 } : { rotate: 0 }}
+              transition={isPlaying ? { duration: 3, repeat: Infinity, ease: "linear" } : {}}
+              className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-700 rounded-full shadow-2xl flex items-center justify-center text-white hover:shadow-rose-300 transition-all"
+            >
+              {isPlaying ? (
+                <FaMusic className="text-md" />
+              ) : (
+                <FaPlay className="text-sm ml-1" />
+              )}
+            </motion.button>
           </div>
         </motion.div>
       )}

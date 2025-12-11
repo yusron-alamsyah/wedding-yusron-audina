@@ -150,12 +150,12 @@ export default function EventSection() {
             <div className="flex items-start gap-6 mb-4 pb-4 border-b border-gray-300">
               <div className="flex items-center justify-center">
                 <p className="text-7xl md:text-7xl font-serif text-gray-700 leading-none">
-                  11
+                  17
                 </p>
               </div>
               <div className="flex-1 pt-3">
                 <p className="text-md text-gray-600 font-md">
-                  Minggu
+                  Sabtu
                 </p>
                 <p className="text-md text-gray-600 font-md">
                   Januari
@@ -169,7 +169,7 @@ export default function EventSection() {
             {/* Time */}
             <div className="flex items-center gap-3 mb-6">
               <FaClock className="text-gray-700 text-xl" />
-              <p className="text-gray-700 font-sm">12:30  - 15:00</p>
+              <p className="text-gray-700 font-sm">12:30  - Selesai</p>
             </div>
 
             {/* Location */}
@@ -178,13 +178,13 @@ export default function EventSection() {
                 Lokasi Acara
               </h4>
               <p className="text-gray-600 text-sm">
-                Ds Batankrajan RT 03 RW 02, Kec Gedeg, Kab Mojokerto
+                Jl. Brantas Gg 2 No. 58, Kel Ngaglik, Kec Batu, Kota Batu
               </p>
             </div>
 
             {/* Google Maps Button */}
             <a
-              href="https://maps.app.goo.gl/LERkjWXJkW3mm3fk6?g_st=ipc"
+              href="https://www.google.com/maps?q=-7.86841487884521,112.52326965332"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-gray-700 text-gray-700 p-2 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300"
